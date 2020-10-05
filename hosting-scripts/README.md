@@ -1,4 +1,5 @@
-# Python script leaseweb_invoice.py
+# Python script leaseweb_gsheet.py
+This script fetches invoice details from your Leaseweb account and creates Google sheet
 Before use it:
 * Install [python module gspread and configure Google authentification](https://www.twilio.com/blog/2017/02/an-easy-way-to-read-and-write-to-a-google-spreadsheet-in-python.html)
 * Create google_sheet_secret.json with Google auth keys
