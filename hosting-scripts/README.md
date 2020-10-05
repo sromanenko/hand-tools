@@ -13,7 +13,7 @@ lw_accounts = {
 }
 ```
 In this example we have two API keys for US and EU accounts
-* Run script providing region EU for Europe and US for USA, and invoice number:
+* Run script providing region EU for Europe or US for USA, and invoice number:
 ```
-python3 leaseweb_gsheet.py -r eu -i91181824
+python3 leaseweb_gsheet.py -r eu -i 91181824
 ```
