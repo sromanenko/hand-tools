@@ -32,7 +32,7 @@ def main(url, auth_key):
                 'UnitAmount': item['unitAmount'],
                 'TotalAmount': item['totalAmount'],
                 'Reference': item['reference'] if 'reference' in item else '',
-                'EquipmentId': item['equipmentId'] if item['contractId'] != '55033048' else '',
+                'EquipmentId': item['equipmentId'] if item['contractId'] != config.lw_contract else '',
         }
         hosts.append(host)
     return hosts
