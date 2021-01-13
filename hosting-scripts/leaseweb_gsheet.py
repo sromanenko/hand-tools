@@ -44,8 +44,8 @@ scope = ['https://spreadsheets.google.com/feeds',
 creds = ServiceAccountCredentials.from_json_keyfile_name('google_sheet_secret.json', scope)
 client = gspread.authorize(creds)
 
-spreadsheet = client.open("Invoices") # Google doc
-worksheet = spreadsheet.worksheet('Billing') # Вкладка Billing
+spreadsheet = client.open("Hosting invoices") # Google doc
+worksheet = spreadsheet.worksheet('LWBilling') # Вкладка Billing
 
 def update_google_table(parameter_list):
     # На вход функции передается list элементами которого являются dict
