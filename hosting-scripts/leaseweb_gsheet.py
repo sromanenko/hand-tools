@@ -27,7 +27,6 @@ def api_request(url, headers, params=None):
 def main(url, auth_key):
     hosts = []
     for item in api_request(url, auth_key)['lineItems']:
-        print(item)
         host = {
             'ContractId': item['contractId'],
             'Product': item['product'],
