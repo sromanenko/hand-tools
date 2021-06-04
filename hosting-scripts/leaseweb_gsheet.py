@@ -49,7 +49,7 @@ client = gspread.authorize(creds)
 
 def update_google_table(parameter_list):
     # Google doc
-    spreadsheet = client.open("Leaseweb EU invoices")
+    spreadsheet = client.open("Leaseweb invoices")
     # Создание вкладки worksheet с номером инвойса
     worksheet = spreadsheet.add_worksheet(title=invoice, rows="300", cols="10")
     worksheet = spreadsheet.worksheet(invoice)  # Вкладка Billing
